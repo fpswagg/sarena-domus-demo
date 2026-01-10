@@ -9,7 +9,7 @@ export default function LogementsPage() {
         <div className={styles.header}>
           <h1 className={styles.title}>Nos hébergements</h1>
           <p className={styles.subtitle}>
-            Découvrez notre sélection d'hébergements disponibles au Cameroun
+            Découvrez notre sélection d&apos;hébergements disponibles au Cameroun
           </p>
         </div>
         

@@ -12,7 +12,7 @@ export default function HomePage() {
             Trouvez votre hébergement idéal au Cameroun
           </h1>
           <p className={styles.heroSubtitle}>
-            Découvrez une sélection d'appartements, maisons, résidences et hôtels 
+            Découvrez une sélection d&apos;appartements, maisons, résidences et hôtels 
             pour votre séjour. Simple, rapide et fiable.
           </p>
           <div className={styles.heroActions}>
@@ -29,7 +29,7 @@ export default function HomePage() {
           <h2 className={styles.sectionTitle}>Comment ça marche ?</h2>
           <p className={styles.sectionText}>
             Sarena Domus est une plateforme de mise en relation qui vous permet 
-            de découvrir et de contacter directement les propriétaires d'hébergements 
+            de découvrir et de contacter directement les propriétaires d&apos;hébergements 
             au Cameroun. Nous facilitons la recherche et la mise en contact, 
             pour que vous trouviez rapidement le logement qui correspond à vos besoins.
           </p>
@@ -39,9 +39,9 @@ export default function HomePage() {
       {/* Types d'hébergements */}
       <section className={`${styles.section} ${styles.typesSection}`}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Types d'hébergements</h2>
+          <h2 className={styles.sectionTitle}>Types d&apos;hébergements</h2>
           <p className={styles.sectionSubtitle}>
-            Explorez notre sélection variée d'hébergements adaptés à tous les besoins
+            Explorez notre sélection variée d&apos;hébergements adaptés à tous les besoins
           </p>
           <div className={styles.typesGrid}>
             <div className={styles.typeCard}>
@@ -85,7 +85,7 @@ export default function HomePage() {
               <div className={styles.featureIcon}>🔍</div>
               <h3 className={styles.featureTitle}>Recherche simplifiée</h3>
               <p className={styles.featureDescription}>
-                Trouvez rapidement l'hébergement qui correspond à vos critères
+                Trouvez rapidement l&apos;hébergement qui correspond à vos critères
               </p>
             </div>
             <div className={styles.feature}>
@@ -106,7 +106,7 @@ export default function HomePage() {
               <div className={styles.featureIcon}>✅</div>
               <h3 className={styles.featureTitle}>Sélection vérifiée</h3>
               <p className={styles.featureDescription}>
-                Une sélection d'hébergements de qualité dans les principales villes
+                Une sélection d&apos;hébergements de qualité dans les principales villes
               </p>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function HomePage() {
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Prêt à trouver votre hébergement ?</h2>
             <p className={styles.ctaSubtitle}>
-              Explorez notre catalogue et contactez les propriétaires dès aujourd'hui
+              Explorez notre catalogue et contactez les propriétaires dès aujourd&apos;hui
             </p>
             <Button href="/logements" variant="primary" size="lg">
               Découvrir les logements

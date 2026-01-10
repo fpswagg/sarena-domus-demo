@@ -9,7 +9,7 @@ export default function Footer() {
           <div className={styles.brand}>
             <h3 className={styles.brandTitle}>Sarena Domus</h3>
             <p className={styles.brandDescription}>
-              Votre plateforme de mise en relation pour trouver l'hébergement idéal au Cameroun.
+              Votre plateforme de mise en relation pour trouver l&apos;hébergement idéal au Cameroun.
             </p>
           </div>
           
