@@ -1,0 +1,244 @@
+.detailPage {
+  min-height: 100vh;
+  padding: var(--spacing-xl) 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Image Section */
+.imageSection {
+  margin-bottom: var(--spacing-xl);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-orange-light) 100%);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.imageIcon {
+  font-size: 6rem;
+  opacity: 0.3;
+}
+
+/* Content Section */
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.header {
+  position: relative;
+}
+
+.typeBadge {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-md);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.location {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Price Section */
+.priceSection {
+  padding: var(--spacing-lg);
+  background-color: var(--color-gray-light);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.pricePeriod {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+/* Description Section */
+.descriptionSection {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-gray);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+/* Details Section */
+.detailsSection {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-gray);
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background-color: var(--color-gray-light);
+  border-radius: var(--radius-md);
+}
+
+.detailLabel {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.detailValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Contact Section */
+.contactSection {
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-orange-light) 100%);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.contactSection .sectionTitle {
+  color: var(--color-black);
+  margin-bottom: var(--spacing-sm);
+}
+
+.contactInfo {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-black);
+  opacity: 0.9;
+}
+
+.contactActions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.contactButton {
+  width: 100%;
+  max-width: 400px;
+}
+
+.phoneLink {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-white);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.phoneLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detailPage {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .imagePlaceholder {
+    height: 250px;
+  }
+  
+  .imageIcon {
+    font-size: 4rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactSection {
+    padding: var(--spacing-lg);
+  }
+  
+  .contactButton {
+    width: 100%;
+  }
+}
