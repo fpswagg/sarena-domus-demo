@@ -91,7 +91,7 @@ const PropertySpecifications: React.FC<PropertySpecificationsProps> = ({ propert
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <span className="text-sm text-gray-600">Price</span>
-                        <p className="text-gray-900 font-medium">{property.currency} {formatPropertyPrice(property.price, property.currency)}</p>
+                        <p className="text-gray-900 font-medium">{property.currency} {formatPropertyPrice(property.price)}</p>
                     </div>
                     <div>
                         <span className="text-sm text-gray-600">Area</span>

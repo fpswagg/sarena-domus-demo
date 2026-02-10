@@ -46,7 +46,7 @@ const SimilarProperties: React.FC<SimilarPropertiesProps> = ({ title, currentPro
                                     <Star size={14} className="fill-black text-black" />
                                     <span className="text-sm font-bold text-gray-900">—</span>
                                 </div>
-                                <p className="text-sm font-bold text-gray-900">{property.currency} {formatPropertyPrice(property.price, property.currency)}</p>
+                                <p className="text-sm font-bold text-gray-900">{property.currency} {formatPropertyPrice(property.price)}</p>
                             </div>
                         </Link>
                         );

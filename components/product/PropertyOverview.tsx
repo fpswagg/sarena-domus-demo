@@ -14,7 +14,7 @@ const PropertyOverview: React.FC<PropertyOverviewProps> = ({ property }) => {
     const [selectedImage, setSelectedImage] = useState(0);
     const images = getPropertyImageUrls(property);
     const location = formatPropertyLocation(property);
-    const priceStr = formatPropertyPrice(property.price, property.currency);
+    const priceStr = formatPropertyPrice(property.price);
     
     const goToPrevious = () => {
         setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));

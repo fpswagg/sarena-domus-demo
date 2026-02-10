@@ -33,7 +33,7 @@ const LikedPropertiesTab = () => {
                         id={property.id}
                         title={property.title}
                         location={formatPropertyLocation(property)}
-                        price={formatPropertyPrice(property.price, property.currency)}
+                        price={formatPropertyPrice(property.price)}
                         area={property.area_sqm != null ? `${property.area_sqm} sqm` : '—'}
                         rating={0}
                         imageUrls={getPropertyImageUrls(property)}

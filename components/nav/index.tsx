@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import Search from './Search';
 import UserMenu from './UserMenu';
@@ -17,12 +17,16 @@ const Navbar = () => {
 
                     {/* Search Section (Center) - Desktop */}
                     <div className="hidden md:flex flex-1 justify-center max-w-3xl min-w-0">
-                        <Search />
+                        <Suspense fallback={<div className="w-full max-w-3xl h-10 rounded-full bg-gray-100 animate-pulse" />}>
+                            <Search />
+                        </Suspense>
                     </div>
 
                     {/* Mobile Search - Centered */}
                     <div className="md:hidden flex-1 flex justify-center">
-                        <Search />
+                        <Suspense fallback={<div className="w-24 h-9 rounded-full bg-gray-100 animate-pulse" />}>
+                            <Search />
+                        </Suspense>
                     </div>
 
                     {/* User Actions Section (Right) */}

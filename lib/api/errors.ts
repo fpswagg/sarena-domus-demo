@@ -142,20 +142,20 @@ function parseErrorBody(body: unknown): ParsedError {
       errors[k] = Array.isArray(v) ? (v as string[]) : [String(v)];
     }
     const message =
-      typeof (obj as ValidationErrorResponse & { message?: string }).message === "string"
-        ? (obj as ValidationErrorResponse & { message: string }).message
+      typeof (obj as unknown as ValidationErrorResponse & { message?: string }).message === "string"
+        ? (obj as unknown as ValidationErrorResponse & { message: string }).message
         : "Validation failed";
     return { type: "validation", message: String(message), errors };
   }
 
   // { success: false, message: string }
   if (obj.success === false && typeof obj.message === "string") {
-    return { type: "message", message: (obj as SuccessFalseMessageResponse).message };
+    return { type: "message", message: (obj as unknown as SuccessFalseMessageResponse).message };
   }
 
   // { message: string }
   if (typeof obj.message === "string") {
-    return { type: "message", message: (obj as MessageErrorResponse).message };
+    return { type: "message", message: (obj as unknown as MessageErrorResponse).message };
   }
 
   return { type: "message", message: "Request failed" };

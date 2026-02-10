@@ -64,7 +64,7 @@ const MyListingCard: React.FC<MyListingCardProps> = ({ listing }) => {
                             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shrink-0">
                                 <DollarSign size={20} className="text-gray-600" />
                             </div>
-                            <span className="text-sm font-medium text-gray-700">{listing.currency} {formatPropertyPrice(listing.price, listing.currency)}</span>
+                            <span className="text-sm font-medium text-gray-700">{listing.currency} {formatPropertyPrice(listing.price)}</span>
                         </div>
 
                         <div className="flex items-center gap-3">
